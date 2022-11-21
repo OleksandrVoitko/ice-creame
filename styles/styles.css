@@ -100,7 +100,7 @@ p {
   width: 159px;
   height: 44px;
   padding-left: 37px;
-  padding-right: 53px;
+  padding-right: 37px;
 
   background-color: #ffffff;
   color: var(--primary-accent-text-color);
@@ -280,7 +280,8 @@ p {
   padding-bottom: 119px;
 }
 
-.products-subtitle {
+/* From sections PRODUCTS, HOW-IT'S-MADE  */
+.subtitle {
   margin-bottom: 15px;
 
   color: var(--secondary-accent-text-color);
@@ -382,4 +383,134 @@ p {
   border-radius: 20px;
 
   color: var(--primary-accent-text-color);
+}
+.cards-button:hover,
+.cards-button:focus {
+  background-color: var(--primary-accent-color);
+  color: #ffffff;
+}
+
+/* Section HOW-IT'S-MADE */
+.how-made {
+  padding-top: 125px;
+  padding-bottom: 65px;
+
+  background-color: var(--secondary-background-color);
+}
+
+.how-made-title {
+  margin-bottom: 55px;
+
+  color: var(--primary-accent-text-color);
+
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+}
+
+.about > img {
+  margin-right: 74px;
+}
+
+.about-made {
+  padding-top: 51px;
+}
+
+.about-made-title {
+  margin-bottom: 35px;
+
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+}
+
+.about-made-description {
+  margin-bottom: 45px;
+
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.93;
+  letter-spacing: 0.04em;
+}
+
+.about-made-button {
+  width: 176px;
+  height: 44px;
+  padding-left: 37px;
+  padding-right: 38px;
+
+  background-color: #ffffff;
+  color: var(--primary-accent-text-color);
+
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+
+  border: 1px solid transparent;
+  border-radius: 22px;
+
+  cursor: pointer;
+}
+.about-made-button:hover,
+.about-made-button:focus {
+  background-color: var(--hover-btn-color);
+}
+
+/* Section ADVANTAGES */
+.advantages {
+  padding-top: 64px;
+  padding-bottom: 310px;
+
+  background-color: var(--secondary-background-color);
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list-item-description > .number {
+  margin-bottom: 15px;
+
+  color: var(--primary-accent-text-color);
+
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+.advantages-list-item-description > .text {
+  display: block;
+
+  padding-top: 15px;
+
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
 }
