@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,304 +22,355 @@
   </head>
   <body>
     <!-- Section HEADER -->
-    <header>
-      <a href="./index.html"
-        ><img src="./img/logo.jpg" alt="picture - logo"
-      /></a>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html"
+          ><img
+            src="./img/logo.png"
+            alt="picture - logo"
+            width="199"
+            height="50"
+        /></a>
 
-      <nav>
-        <ul class="list">
-          <li><a class="link" href="">Home</a></li>
-          <li><a class="link" href="">About us</a></li>
-          <li><a class="link" href="">How it's made?</a></li>
-          <li><a class="link" href="">Our products</a></li>
-          <li><a class="link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <button>Buy now ></button>
+        <nav class="navigation">
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Home</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">About us</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">How it's made?</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Our products</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Buy now</button>
+      </div>
     </header>
     <!-- Section MAIN -->
     <main>
       <!-- Section HERO -->
       <section class="hero">
-        <div>
-          <h1>
-            ice cream <br />
-            made with <br /><span>passion</span>
-          </h1>
-          <ul class="list">
-            <li>
-              <a class="link" href="" aria-label="Link to section Products"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a
-                class="link"
-                href=""
-                aria-label="Link to section How it's made "
-                >How it's made?</a
-              >
-            </li>
-          </ul>
-          <div>
-            <img src="./img/hero/bio-eco-milk.png" alt="picture - eco-milk" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button>></button>
+        <div class="container">
+          <div class="first-hero-column">
+            <h1 class="hero-title">
+              ice cream <br />
+              made with <br /><span>passion</span>
+            </h1>
+            <ul class="hero-list list">
+              <li class="hero-list-item">
+                <a
+                  class="hero-list-item-link link active"
+                  href=""
+                  aria-label="Link to section Products"
+                  >Products</a
+                >
+              </li>
+              <li class="hero-list-item">
+                <a
+                  class="hero-list-item-link link"
+                  href=""
+                  aria-label="Link to section How it's made "
+                  >How it's made?</a
+                >
+              </li>
+            </ul>
+            <div class="bio-eco">
+              <img src="./img/hero/bio-eco-milk.png" alt="picture - eco-milk" />
+              <div class="bio-eco-promo">
+                <p class="promo-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+                <button class="promo-button">></button>
+              </div>
+            </div>
+          </div>
+          <img
+            class="hero-ice-cream"
+            src="./img/hero/ice-cream.png"
+            alt="picture - ice-cream"
+            width="236"
+            height="557"
+          />
+          <div class="second-hero-column">
+            <ul class="counters-list list">
+              <li class="counters-list-item">
+                <p class="counters-list-item-description">
+                  <span>16 </span> <br />cafes
+                </p>
+              </li>
+              <li class="counters-list-item">
+                <p class="counters-list-item-description">
+                  <span>23 </span> <br />food trucks
+                </p>
+              </li>
+            </ul>
+            <img
+              src="./img/hero/girl.png"
+              alt="picture - girl with ice-cream"
+            />
           </div>
         </div>
-        <img src="./img/hero/ice-cream.png" alt="picture - ice-cream" />
-        <ul class="list">
-          <li>
-            <p><span>16 </span>cafes</p>
-          </li>
-          <li>
-            <p><span>23 </span>food trucks</p>
-          </li>
-        </ul>
-
-        <img src="./img/hero/girl.png" alt="picture - girl with ice-cream" />
       </section>
       <!-- Section PRODUCTS -->
-      <section>
-        <p>100% natural</p>
-        <h2>products</h2>
-        <ul class="list">
-          <li>
-            <h3>ice cream</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button>></button>
-          </li>
-          <li>
-            <h3>ice coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button>></button>
-          </li>
-          <li>
-            <h3>milkshakes</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button>></button>
-          </li>
-        </ul>
+      <section class="products">
+        <div class="container">
+          <p class="products-subtitle">100% natural</p>
+          <h2 class="products-title">products</h2>
+          <ul class="cards list">
+            <li class="cards-item card-1">
+              <h3 class="cads-title">ice cream</h3>
+              <p class="cards-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="cards-button">></button>
+            </li>
+            <li class="cards-item card-2">
+              <h3 class="cads-title">ice coffee</h3>
+              <p class="cards-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="cards-button">></button>
+            </li>
+            <li class="cards-item card-3">
+              <h3 class="cads-title">milkshakes</h3>
+              <p class="cards-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="cards-button">></button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Section HOW-IT'S-MADE -->
       <section>
-        <p>tradition and love</p>
-        <h2>how it's made?</h2>
-        <h3>
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-          justo fringilla.
-        </h3>
-        <p>
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-          tincidunt.
-          <br />
-          <br />
-          Aliquam erat volutpat. Aenean accumsan.
-        </p>
-        <button>Read more ></button>
+        <div class="container">
+          <p>tradition and love</p>
+          <h2>how it's made?</h2>
+          <h3>
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </h3>
+          <p>
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+            <br />
+            <br />
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <button>Read more ></button>
+        </div>
       </section>
       <!-- Section ADVANTAGES -->
       <section>
-        <h2 hidden>advantages</h2>
-        <ul class="list">
-          <li>
-            <p>
-              <span>721</span>Aliquam ac dui vel dui vulputate consectetur.
+        <div class="container">
+          <h2 hidden>advantages</h2>
+          <ul class="list">
+            <li>
+              <p>
+                <span>721</span>Aliquam ac dui vel dui vulputate consectetur.
+                Mauris massa.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>16kg</span>Aliquam ac dui vel dui vulputate consectetur.
+                Mauris massa.
+              </p>
+            </li>
+            <li>
+              <span>84</span>Aliquam ac dui vel dui vulputate consectetur.
               Mauris massa.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>16kg</span>Aliquam ac dui vel dui vulputate consectetur.
-              Mauris massa.
-            </p>
-          </li>
-          <li>
-            <span>84</span>Aliquam ac dui vel dui vulputate consectetur. Mauris
-            massa.
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Section GALLERY -->
-      <section></section>
+      <section>
+        <div class="container"></div>
+      </section>
       <!-- Section CUSTOMERS -->
       <section>
-        <h2 hidden>customers</h2>
-        <div>
-          <img
-            src="./img/customers/customer-1.jpg"
-            alt="Picture of the customer"
-          />
-          <p>
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-            ipsum primis in nibh vel risus.
-          </p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <p>Emily, Los Angeles</p>
+        <div class="container">
+          <h2 hidden>customers</h2>
+          <div>
+            <img
+              src="./img/customers/customer-1.jpg"
+              alt="Picture of the customer"
+            />
+            <p>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p>Emily, Los Angeles</p>
+          </div>
         </div>
       </section>
       <!-- Section CONTACTS -->
       <section>
-        <h2 hidden>Contacts</h2>
-        <ul class="list">
-          <li>
-            <p>CAFE</p>
-            <p>Chicago</p>
-            <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            <ul class="list">
-              <li>
-                <p>Monday - Friday</p>
-                <time>06:00</time>
-                <p>AM -</p>
-                <time>10:00</time>
-                <p>PM</p>
-              </li>
-              <li>
-                <p>Saturday - Sunday</p>
-                <time>08:00</time>
-                <p>AM -</p>
-                <time>16:00</time>
-                <p>PM</p>
-              </li>
-            </ul>
-            <ul class="list">
-              <li>
-                <a class="link" href="tel:+61(0) 383 766 284 "
-                  >+61(0) 383 766 284</a
-                >
-              </li>
-              <li>
-                <a class="link" href="mailto:noreply@envato.com"
-                  >noreply@envato.com</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>FOOD TRUCK</p>
-            <p>Los Angeles</p>
-            <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            <ul class="list">
-              <li>
-                <p>Monday - Friday</p>
-                <time>06:00</time>
-                <p>AM -</p>
-                <time>10:00</time>
-                <p>PM</p>
-              </li>
-              <li>
-                <p>Saturday - Sunday</p>
-                <time>08:00</time>
-                <p>AM -</p>
-                <time>16:00</time>
-                <p>PM</p>
-              </li>
-            </ul>
-            <ul class="list">
-              <li>
-                <a class="link" href="tel:+61(0) 383 766 284 "
-                  >+61(0) 383 766 284</a
-                >
-              </li>
-              <li>
-                <a class="link" href="mailto:noreply@envato.com"
-                  >noreply@envato.com</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>CAFE</p>
-            <p>New York</p>
-            <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-            <ul class="list">
-              <li>
-                <p>Monday - Friday</p>
-                <time>06:00</time>
-                <p>AM -</p>
-                <time>10:00</time>
-                <p>PM</p>
-              </li>
-              <li>
-                <p>Saturday - Sunday</p>
-                <time>08:00</time>
-                <p>AM -</p>
-                <time>16:00</time>
-                <p>PM</p>
-              </li>
-            </ul>
-            <ul class="list">
-              <li>
-                <a class="link" href="tel:+61(0) 383 766 284 "
-                  >+61(0) 383 766 284</a
-                >
-              </li>
-              <li>
-                <a class="link" href="mailto:noreply@envato.com"
-                  >noreply@envato.com</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a class="link" href="" aria-label="Link to the location"
-              >Our Locations</a
-            >
-          </li>
-          <li>
-            <a class="link" href="" aria-label="Link to the franchise"
-              >Franchise</a
-            >
-          </li>
-        </ul>
+        <div class="container">
+          <h2 hidden>Contacts</h2>
+          <ul class="list">
+            <li>
+              <p>CAFE</p>
+              <p>Chicago</p>
+              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              <ul class="list">
+                <li>
+                  <p>Monday - Friday</p>
+                  <time>06:00</time>
+                  <p>AM -</p>
+                  <time>10:00</time>
+                  <p>PM</p>
+                </li>
+                <li>
+                  <p>Saturday - Sunday</p>
+                  <time>08:00</time>
+                  <p>AM -</p>
+                  <time>16:00</time>
+                  <p>PM</p>
+                </li>
+              </ul>
+              <ul class="list">
+                <li>
+                  <a class="link" href="tel:+610383766284 "
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>FOOD TRUCK</p>
+              <p>Los Angeles</p>
+              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              <ul class="list">
+                <li>
+                  <p>Monday - Friday</p>
+                  <time>06:00</time>
+                  <p>AM -</p>
+                  <time>10:00</time>
+                  <p>PM</p>
+                </li>
+                <li>
+                  <p>Saturday - Sunday</p>
+                  <time>08:00</time>
+                  <p>AM -</p>
+                  <time>16:00</time>
+                  <p>PM</p>
+                </li>
+              </ul>
+              <ul class="list">
+                <li>
+                  <a class="link" href="tel:+610383766284 "
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>CAFE</p>
+              <p>New York</p>
+              <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              <ul class="list">
+                <li>
+                  <p>Monday - Friday</p>
+                  <time>06:00</time>
+                  <p>AM -</p>
+                  <time>10:00</time>
+                  <p>PM</p>
+                </li>
+                <li>
+                  <p>Saturday - Sunday</p>
+                  <time>08:00</time>
+                  <p>AM -</p>
+                  <time>16:00</time>
+                  <p>PM</p>
+                </li>
+              </ul>
+              <ul class="list">
+                <li>
+                  <a class="link" href="tel:+610383766284 "
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a class="link" href="" aria-label="Link to the location"
+                >Our Locations</a
+              >
+            </li>
+            <li>
+              <a class="link" href="" aria-label="Link to the franchise"
+                >Franchise</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Section FOOTER -->
     <footer>
-      <div>
-        <p>homemade ice cream made <span>with passion</span></p>
-      </div>
-      <div>
-        <ul class="list">
-          <li>
-            <a class="link" href="" aria-label="Link to the GitHub">github</a>
-          </li>
-          <li>
-            <a class="link" href="" aria-label="Link to the Telegram"
-              >telegram</a
-            >
-          </li>
-          <li>
-            <a class="link" href="" aria-label="Link to the Facebook"
-              >facebook</a
-            >
-          </li>
-        </ul>
-        <p></p>
-        <a class="link" href="tel:+61(0) 383 766 284 ">+61(0) 383 766 284</a>
+      <div class="container">
+        <div>
+          <p>homemade ice cream made <span>with passion</span></p>
+        </div>
+        <div>
+          <ul class="list">
+            <li>
+              <a class="link" href="" aria-label="Link to the GitHub">github</a>
+            </li>
+            <li>
+              <a class="link" href="" aria-label="Link to the Telegram"
+                >telegram</a
+              >
+            </li>
+            <li>
+              <a class="link" href="" aria-label="Link to the Facebook"
+                >facebook</a
+              >
+            </li>
+          </ul>
+          <p></p>
+          <a class="link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
+        </div>
       </div>
     </footer>
   </body>
