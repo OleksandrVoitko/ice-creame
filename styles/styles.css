@@ -514,3 +514,69 @@ p {
   line-height: 1.75;
   letter-spacing: 0.02em;
 }
+
+/* Section GALLERY */
+.gallery {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2a2a2a;
+}
+
+/* Section CUSTOMERS */
+.customer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customer-img {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.customer-coment-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 88px;
+  padding-top: 47px;
+  padding-right: 88px;
+  padding-bottom: 39px;
+  width: 926px;
+  height: 138px;
+}
+
+.customer-coment {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.customer-carusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-accent-color);
+}
+
+.customer-carusel-items {
+  margin-right: 10px;
+}
+
+.customer-description {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+}
