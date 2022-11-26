@@ -756,3 +756,70 @@ p {
   color: var(--primary-accent-color);
   background-color: var(--hover-btn-color);
 }
+
+/* Section FOOTER */
+.footer {
+  padding-top: 105px;
+  padding-bottom: 10px;
+
+  background-color: var(--secondary-background-color);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-accent-text-color);
+}
+
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-bottom: 106px;
+}
+
+.social-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.phone-link {
+  color: var(--primary-accent-text-color);
+}
+
+.copyright {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
